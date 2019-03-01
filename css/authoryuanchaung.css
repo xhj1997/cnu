@@ -1,0 +1,329 @@
+.container{
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    background-color: white;
+}
+.container .header{
+    position: relative;
+    height: 205px;
+    color: #444444;
+}
+.container .header .mohu{
+    height: 205px;
+    width: 100%;
+    position: absolute;
+    background: url("../images/yuanchuang2.png");
+    background-size: 120%;
+    background-position: -20px -20px;
+    -webkit-filter:blur(2px);
+}
+.container .header h2{
+    display: inline-block;
+    width:100%;
+    color: white;
+    font-family: inherit;
+    font-size:25px;
+    font-weight: 500;
+    position: absolute;
+    z-index: 99;
+    top: 40%;
+    text-align: center;
+}
+.container .header .bianji {
+    font-size: 14px;
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+}
+.container .header .bianji a {
+    font-size: 14px;
+    color: #222222;
+}
+.container .header .tuijian {
+    font-size: 14px;
+    position: absolute;
+    left: 35%;
+    bottom: 10%;
+}
+.container .header .yuedu {
+    font-size: 14px;
+    position: absolute;
+    left:70%;
+    bottom: 10%;
+	background-color:rgba(0,0,0,0);
+	border:none;
+}
+.container .main {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    column-gap:5px;
+    column-count: 2;
+    position: relative;
+    padding-left: 6px;
+    padding-top: 8px;
+    padding-right: 6px;
+}
+.container .main .pic {
+    /*width:150px;*/
+    width: 96%;
+    break-inside: avoid;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right:10px ;
+
+}
+.container .main .pic a{
+    width: 100%;
+}
+.container .main .pic a img{
+    width: 100%;
+    height: 100%;
+}
+.container .bottom {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+.container .bottom .button{
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    left: 35%;
+}
+.container .bottom .button a{
+    display: inline-block;
+    border: 1px solid gray;
+    text-align: center;
+    font-size: 14px;
+    width: 20%;
+    padding: 5px 14px;
+    border-radius: 15px;
+}
+.container .bottom .button a:last-child{
+    color: black;
+}
+.container .jieshao{
+    width: 100%;
+    background-color: #333;
+    margin-top: 30px;
+}
+.container .jieshao .shang{
+    width: 100%;
+    height: 200px;
+    border-bottom:1px solid white;
+    position: relative;
+}
+.container .jieshao .shang a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url("../images/shouye16.JPG");
+    background-size: 100% 100%;
+    border-radius: 5px;
+    position: absolute;
+    left: 5%;
+    top: 40%;
+}
+.container .jieshao .shang span{
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "lato-regular", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    position: absolute;
+    left: 25%;
+    top: 40%;
+}
+.container .jieshao .shang .name{
+    display: block;
+    width: 78px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    font-weight: 400;
+    text-align: center;
+    position: absolute;
+    left: 25%;
+    top: 54%;
+}
+.container .jieshao .shang .shoucang{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url("../images/ccc.png")  #444444 -100px -1px;
+    background-size: 150px 100px;
+    border-radius: 5px;
+    position: absolute;
+    left: 65%;
+    top: 40%;
+}
+.container .jieshao .shang .shoucang1{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url("../images/ccc.png")  #444444 -100px -50px;
+    background-size: 150px 100px;
+    border-radius: 5px;
+    position: absolute;
+    left: 65%;
+    top: 40%;
+}
+.container .jieshao .shang .dianzan{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url("../images/ccc.png") #ff7f7f -50px -1px;
+    background-size: 150px 100px;
+    border-radius: 5px;
+    position: absolute;
+    left: 80%;
+    top: 40%;
+}
+.container .jieshao .shang .dianzan1{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url("../images/ccc.png") #ff7f7f -50px -50px;
+    background-size: 150px 100px;
+    border-radius: 5px;
+    position: absolute;
+    left: 80%;
+    top: 40%;
+}
+.container .jieshao .xia{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:  #333;
+    font-size: 14px;
+}
+.container .jieshao .xia span:first-child{
+    display: block;
+    margin-bottom: 8px;
+    margin-left: 20px;
+}
+.container .jieshao .xia span:last-child{
+    display: block;
+    margin-bottom: 8px;
+    margin-left: 20px;
+}
+.container .jieshao .xia span a {
+    color: white;
+}
+.container .pinglun{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+.container .pinglun h2{
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-bottom: 28px;
+}
+.container .pinglun span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url("../images/shouye16.JPG");
+    background-size: contain;
+    border-radius: 4px;
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    -webkit-box-shadow: 2px 2px 2px 2px grey;
+}
+.container .pinglun .icon_text{
+    width: 50%;
+    height: 34px;
+    display: block;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: absolute;
+    left: 20%;
+    top: 40%;
+}
+.container .pinglun .icon_pinglun{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: #5cb85c;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 6px;
+    position: absolute;
+    top: 40%;
+    right:5%;
+}
+
+.list0{padding: 20px 0; position: relative; border-top: 1px solid #eee;
+    top:0;}
+.head{ float: left;margin-left: 10px;}
+.head img{width: 50px; height: 50px;  -webkit-box-shadow: 2px 2px 2px 2px grey;}
+.close{width: 20px; height: 20px; position: absolute; top: 0; right: 0; color:grey; font-size: 14px; text-align: center; line-height: 20px;}
+.close:hover{color: #eb7350;}
+.content{width: 75%; line-height: 20px; font-size: 14px; margin-left: 70px;}
+.name{color: #eb7350;}
+.good:after{clear:both;content:'';display:block;width:0;height:0;visibility:hidden;}
+.good{*zoom:1;height: 30px;}
+.date{float:left; color: grey;}
+.good a{float: right; color: grey;margin-right:20px;}
+.people{height: 28px; padding-left: 10px;position: relative;
+    top:0;color: black;}
+.comment:after{clear:both;content:'';display:block;width:0;height:0;visibility:hidden;}
+.comment{*zoom:1; padding: 10px 0; border-top: 1px solid #eee;}
+.comment-left{width: 30px; float: left; display: inline; margin-right: 10px;}
+.comment-left img{width: 30px; height: 30px;}
+.comment-right{float: left; width: 260px;margin-left:10px;}
+.comment-text{line-height: 18px;}
+.comment-text span{color:#eb7350;}
+.comment-date{font-size: 12px; line-height: 14px; color: #ccc; position: relative;}
+.comment-zan{position: absolute; right: 40px; bottom: 0; color: #808080;}
+.comment-dele{position: absolute; right: 0; bottom: 0; color: #808080;}
+.hf:after{clear:both;content:'';display:block;width:0;height:0;visibility:hidden;}
+.hf{*zoom:1;}
+.hf-text{ background-color: #F0FFFF; border: 1px solid #eee; display: block; height: 30px; line-height:30px;width: 100%; resize: none; color: grey; font-size:1rem;}
+.hf-on .hf-text{height: 60px; color: #333; border:1px solid #ff8140;}
+.hf-btn{float: right; width: 65px; height: 26px; background: #f7f7f7; color: black; font-size: 12px; display: none;}
+.hf-btn-on{background: #ff8140; color: #fff; }
+.hf-nub{float: right; padding: 3px 5px; color: black; display: none;}
+.hf-on .hf-btn{display: inline;}
+.hf-on .hf-nub{display: inline;}
+
+.footer{
+    position: relative;
+    height: 100px;
+    text-align:center;
+    line-height: 100px;
+    font-size: 0.9rem;
+    background-color: #333;
+    color: #aaa;
+    bottom: 0;
+    padding:0;
+}
+@media screen and (min-width: 320px) {
+    html{
+        font-size: 10px;
+    }
+}
+@media screen and  (min-width: 414px) {
+    html{
+        font-size: 12.93px;
+    }
+}
+@media screen and  (min-width: 640px) {
+    html{
+        font-size: 20px;
+    }
+}
+@media screen and  (min-width: 960px) {
+    html{
+        font-size: 30px;
+    }
+}

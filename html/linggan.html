@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <title>
+        灵感 - CNU视觉联盟
+
+    </title>
+    <meta name="keywords" content=" CNU,视觉,摄影,视觉联盟,照片,摄影师,摄影作品集,在线摄影作品集,照片精选,网络摄影作品集,在线照片展廊,分享图片,专业摄影,社会摄影,上传照片,分享照片,出色的摄影作品集,摄影社区,最新摄影作品,快速创建作品集,模特和摄影师,商业摄影,建筑摄影,专业作品集管理,视觉中国图库,视觉中国,视觉联盟,摄影作品,摄影作品欣赏,时尚摄影,时尚摄影作品,艺术,艺术作品,艺术摄影作品,人体艺术,时尚杂志,品牌广告,视觉,视觉艺术,视觉作品,视觉作品欣赏,时尚,设计,当代艺术 " />
+    <meta name="description" content=" 中国视觉联盟cnu.cc-是一家致力于传播优秀视觉文化,研究视觉艺术、交流视觉理念、开拓大众审美视野的专业性视觉网站。 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="http://img.cnu.cc/assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="http://img.cnu.cc/assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="http://www.cnu.cc/assets/font-awesome-4.4.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/灵感.css">
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery-1.8.2.js"></script>
+    <style type="text/css">
+        *{
+            font-size: 14px;
+            font-family: "lato-regular", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        }
+        header{
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            padding: 6px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        header .h_right button{
+            display: block;
+            width: 50px;
+            height: 34px;
+            background-color: black;
+            border: none;
+        }
+        header .h_right .icon-bar{
+            display: block;
+            width: 30px;
+            height: 2px;
+            margin: 4px 3px;
+            padding-left: 4px;
+            background-color: white;
+            border-radius: 1px;
+        }
+        .f_left{
+            float: left;
+        }
+        .f_right{
+            float: right;
+        }
+        .box{
+            position: absolute;
+            top:50px;
+            left: 0;
+            width: 100%;
+            background-color: black;
+        }
+        .box .b_first{
+            height: 96px;
+        }
+        .box .b_first li{
+            line-height: 48;
+            height: 48px;
+            padding: 2px 10px;
+            box-sizing: border-box;
+        }
+        .box .b_first li input{
+            display: block;
+            width: 100%;
+            background-color: black;
+            border-radius: 3px;
+            border: none;
+            color: #ddd;
+            height: 30px;
+            padding: 4px 12px 4px 36px;
+            font-size: 14px;
+            line-height: 1.42857143;
+        }
+        .box .b_first li:first-of-type::before{
+            display: inline-block;
+            content: "";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background: url("../images/search.png") 7px 5px no-repeat #333;
+        }
+        .box .b_first li:nth-of-type(2){
+            position: relative;
+            width: 100%;
+            height: 48px;
+        }
+        .box .b_first li:nth-of-type(2) a{
+            display:block;
+            width: 100%;
+            height: 30px;
+            position: relative;
+        }
+        .box .b_first li:nth-of-type(2) a .toux{
+            display: inline-block;
+            margin: -5px 5px;
+            border-radius: 2px;
+            background-image: url(../images/head30.jpg);
+            width: 30px;
+            height: 30px;
+            position: absolute;
+        }
+        .box{
+            display: none;
+            z-index: 999;
+        }
+
+        .box .b_second li a{
+            padding: 0 13px;
+            height: 50px;
+            margin: 0;
+            position: relative;
+            display: block;
+            color: #9d9d9d;
+        }
+        .box .b_second li a .myicon {
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+            background-image: url("../images/meinicon@2x.png");
+            background-size: 400%;
+            margin-top: 11px;
+            float: left;
+        }
+        a i.icon-home {
+            background-position: 0 0;
+        }
+        .box .b_second li a span {
+            float: left;
+            line-height: 24px;
+            padding: 0 4px;
+            margin-top: 13px;
+        }
+        a .icon-inspiration{
+            background-position: -48px 0;
+        }
+        a i.icon-discovery {
+            background-position: -24px 0;
+        }
+        .box .b_third{
+            padding: 2px 10px;
+            box-sizing: border-box;
+        }
+        .box .b_third .down .span span:first-of-type{
+            display:inline-block;
+            line-height: 24px;
+            padding: 0 4px;
+            margin-top: 13px;
+            color: #9d9d9d;
+        }
+        .box .b_third li ul{
+            display: none;
+        }
+        .box .b_third a{
+            display: block;
+            padding: 3px 0;
+            clear: both;
+            font-weight: 400;
+            line-height: 1.42857143;
+            color: #9d9d9d;
+            white-space: nowrap;
+        }
+        .down .span span:nth-of-type(2){
+            display: inline-block;
+            width: 0;
+            height: 0;
+            color:#9d9d9d;
+            margin-left: 2px;
+            vertical-align: middle;
+            border-top: 4px dashed;
+            border-right: 4px solid transparent;
+            border-left: 4px solid transparent;
+        }
+        .down ul li{
+            padding: 0 30px;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+        <header>
+    <div class="h_left f_left">
+        <img src="../images/cnulogo.png" alt="">
+    </div>
+    <div class="h_right f_right">
+        <button id="slidetoggle" value="隐藏">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="box" id="box">
+        <ul class="b_first">
+            <li>
+                <input type="text" placeholder="搜索">
+            </li>
+            <li>
+                <a href="#">
+                    <i class="toux"></i>
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+        <ul class="b_second">
+            <li>
+                <a href="../php/shouye.php">
+                    <i class="myicon icon-home"></i>
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="linggan.html"><i class="myicon icon-inspiration"></i>
+                    <span>灵感</span>
+                </a>
+            </li>
+            <li>
+                <a href="yuanchuang.html">
+                    <i class="myicon icon-discovery"></i>
+                    <span>原创</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="b_third">
+            <li class="down">
+                <a href="#" class="span">
+                    <span>投稿</span>
+                    <span></span>
+                </a>
+
+                <ul>
+                    <li>
+                        <a href="yuanchuangtuji.html">原创图集</a>
+                    </li>
+                    <li>
+                        <a href="yuanchuangjiaochen.html">原创教程</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="down">
+                <a href="#" class="span">
+                    <span>消息</span>
+                    <span></span>
+                </a>
+
+                <ul>
+                    <li><a href="information.html">评论</a></li>
+                    <li><a href="information.html">回复</a></li>
+                    <li><a href="information.html">推荐</a></li>
+                    <li><a href="information.html">粉丝</a></li>
+                </ul>
+
+            </li>
+            <li class="down">
+                <a href="#" class="span">
+                    <span>通知</span>
+                </a>
+
+            </li>
+            <li class="down">
+                <a href="#" class="span">
+                    <span>设置</span>
+                    <span></span>
+                </a>
+
+
+                <ul>
+                    <li><a href="">English</a></li>
+                    <li><a href="../php/person_setting.php">个人设置</a></li>
+                    <li><a href="login.html">退出</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</header>
+            <form action="" method="post">
+                <div class="main clearfix">
+                    <div class=" pic daohang ">
+                        <div class="zi">
+                            <a href="#" class="zui"><h3>最新</h3></a>
+                            <a href="灵感_热门.html" cass="zui"><h3>热门</h3></a>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <a href="tuji.html">
+                            <img src="../images/cxd01.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="pic">
+                        <a href="tuji.html">
+                            <img src="../images/cxd02.JPG" alt="">
+                        </a>
+                    </div>
+                    <div class="pic">
+                        <a href="tuji.html">
+                            <img src="../images/cxd03.JPG" alt="">
+                        </a>
+                    </div>
+                    <div class="pic">
+                        <a href="tuji.html">
+                            <img src="../images/cxd222.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="../images/cxd223.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="../images/cxd224.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="pic">
+                    <a href="#">
+                        <img src="../images/cxd225.jpg" alt="">
+                    </a>
+                </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="../images/cxd11.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="../images/cxd227.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="../images/cxd228.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="../images/cxd229.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="../images/cxd230.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="../images/cxd10.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="../images/cxd11.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="../images/cxd12.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="../images/cxd13.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="../images/cxd14.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="../images/cxd15.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="../images/cxd16.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="../images/cxd17.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </form>
+            <div class="bottom">
+                <div class="button">
+                    <a >« Previous</a><a href="灵感_最新1.html">Next »</a>
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+    my$("slidetoggle").onclick=function () {
+        if(this.value=="隐藏"){
+            this.value="显示";
+            my$("box").style.display="block";
+            my$("content").style.top="422px";
+
+        }
+        else{
+            this.value="隐藏";
+            my$("box").style.display="none";
+            my$("content").style.top="0";
+        }
+
+    }
+</script>
+<!--分组-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".down .span").click(function () {
+            var $x=$(this).nextAll();
+            if($x.is(":hidden")){
+                $x.show();
+                $(this).parent().siblings().children(":first").nextAll().hide();
+            }
+            else {
+                $x.hide();
+            }
+        })
+    });
+</script>
+</html>

@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>    爱在日落黄昏 | Leonardo Lomurno ​​​​ - 人像摄影 - CNU视觉联盟
+    </title>
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery-1.8.2.js"></script>
+    <style>
+        .container{
+            width: 100%;
+        }
+        .container .head{
+            width: 100%;
+            height: 205px;
+            background: url("../images/cxd01.jpg");
+            background-size: 120%;
+            background-position: -20px -20px;
+            position: relative;
+            color: #444444;
+        }
+        .container .head h2{
+            display: inline-block;
+            width:90%;
+            text-align: left;
+            color: white;
+            font-family: inherit;
+            font-size:30px;
+            font-weight: 500;
+            position: absolute;
+            z-index: 99;
+            left: 5%;
+            top: 40%;
+        }
+        .container .head .bianji {
+            font-size: 14px;
+            position: absolute;
+            left: 5%;
+            bottom: 10%;
+        }
+        .container .head .bianji a {
+            font-size: 14px;
+            color: #222222;
+        }
+        .container .head .tuijian {
+            font-size: 14px;
+            position: absolute;
+            left: 30%;
+            bottom: 10%;
+        }
+        .container .head .yuedu {
+            font-size: 14px;
+            position: absolute;
+            border: none;
+            left:70%;
+            bottom: 10%;
+            background-color:rgba(0,0,0,0);
+
+        }
+        .container .main{
+            width: 100%;
+            display: block;
+        }
+        .container .main .picture{
+            width: 100%;
+            /*margin-top: 20px;*/
+            display: block;
+            margin: 20px auto;
+        }
+        .container .main .picture img{
+            width: 100%;
+            height: 100%;
+
+        }
+        .container .jieshao{
+            width: 100%;
+            background-color: #333;
+            margin-top: 30px;
+        }
+        .container .jieshao .shang{
+            width: 100%;
+            height: 200px;
+            border-bottom:1px solid white;
+            position: relative;
+        }
+        .container .jieshao .shang a{
+            display: block;
+            width: 50px;
+            height: 50px;
+            background: url("../images/cxd02.JPG");
+            background-size: 100% 100%;
+            border-radius: 5px;
+            position: absolute;
+            left: 5%;
+            top: 40%;
+        }
+        .container .jieshao .shang span{
+            color: white;
+            font-size: 20px;
+            line-height: 20px;
+            font-family: "lato-regular", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            position: absolute;
+            left: 20%;
+            top: 40%;
+        }
+        .container .jieshao .shang .name{
+            display: block;
+            width: 78px;
+            font-size: 12px;
+            line-height: 1.5;
+            border-radius: 3px;
+            font-weight: 400;
+            text-align: center;
+            position: absolute;
+            left: 20%;
+            top: 54%;
+        }
+        .container .jieshao .shang .shoucang{
+            display: block;
+            width: 50px;
+            height: 50px;
+            background: url("../images/ccc.png")  #444444 -100px -1px;
+            background-size: 150px 100px;
+            border-radius: 5px;
+            position: absolute;
+            left: 65%;
+            top: 40%;
+        }
+        .container .jieshao .shang .shoucang1{
+            display: block;
+            width: 50px;
+            height: 50px;
+            background: url("../images/ccc.png")  #444444 -100px -50px;
+            background-size: 150px 100px;
+            border-radius: 5px;
+            position: absolute;
+            left: 65%;
+            top: 40%;
+        }
+        .container .jieshao .shang .dianzan{
+            display: block;
+            width: 50px;
+            height: 50px;
+            background: url("../images/ccc.png") #ff7f7f -50px -1px;
+            background-size: 150px 100px;
+            border-radius: 5px;
+            position: absolute;
+            left: 80%;
+            top: 40%;
+        }
+        .container .jieshao .shang .dianzan1{
+            display: block;
+            width: 50px;
+            height: 50px;
+            background: url("../images/ccc.png") #ff7f7f -50px -50px;
+            background-size: 150px 100px;
+            border-radius: 5px;
+            position: absolute;
+            left: 80%;
+            top: 40%;
+        }
+        .container .jieshao .xia{
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color:  #333;
+            font-size: 14px;
+            }
+        .container .jieshao .xia span:first-child{
+            display: block;
+            margin-bottom: 8px;
+            margin-left: 20px;
+        }
+        .container .jieshao .xia span:last-child{
+            display: block;
+            margin-bottom: 8px;
+            margin-left: 20px;
+        }
+        .container .jieshao .xia span a {
+            color: white;
+        }
+        .container .pinglun{
+            width: 100%;
+            height: 100px;
+            position: relative;
+        }
+        .container .pinglun h2{
+            margin-top: 20px;
+            margin-left: 30px;
+            margin-bottom: 28px;
+        }
+        .container .pinglun span {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: url("../images/cxd3.jpg");
+            background-size: contain;
+            border-radius: 4px;
+            position: absolute;
+            left: 22%;
+            top: 48%;
+        }
+        .container .pinglun .icon_text{
+            width: 20%;
+            height: 34px;
+            display: block;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            position: absolute;
+            left: 40%;
+            top: 48%;
+        }
+        .container .pinglun .icon_pinglun{
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            color: #fff;
+            background-color: #5cb85c;
+            border-color: #4cae4c;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 6px;
+            position: absolute;
+            top: 48%;
+            left: 70%;
+        }
+        .container .liuyan{
+            width: 100%;
+
+        }
+        .container .hua{
+            width: 100%;
+            height: 100px;
+            margin: 20px auto;
+            border-bottom: 1px  dashed darkgrey;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            position: relative;
+        }
+        .container .liuyan .hua img{
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            position: absolute;
+            left: 22%;
+            top: 15%;
+        }
+        .container .liuyan .hua a{
+            color: #94B5AE;
+            font-size: 14px;
+            font-family: inherit;
+            font-weight: 500;
+            position: absolute;
+            left: 40%;
+            top: 20%;
+        }
+        .container .liuyan .hua .liuy_one{
+            display: inline-block;
+            font-size: 14px;
+            font-family: inherit;
+            font-weight: 500;
+            position: absolute;
+            left: 40%;
+            top: 35%;
+        }
+        .container .liuyan .hua .huifu{
+            display: inline-block;
+            border: hidden;
+            position: absolute;
+            left: 70%;
+            top: 20%;
+        }
+              html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .bigbac{
+            background-color: black;
+            width: 100%;
+            height: 756px;
+            z-index: 999;
+            position: fixed;
+            top: 0px;
+            left:0px;
+        }
+        .bigimg{
+            width:100%;
+            margin: 0 auto;
+            position:absolute;
+            top:50%;
+            transform:translate(0,-50%);
+        }
+
+      
+        *{
+            font-size: 14px;
+            font-family: "lato-regular", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        }
+        header{
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            padding: 6px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        header .h_right button{
+            display: block;
+            width: 50px;
+            height: 34px;
+            background-color: black;
+            border: none;
+        }
+        header .h_right .icon-bar{
+            display: block;
+            width: 30px;
+            height: 2px;
+            margin: 4px 3px;
+            padding-left: 4px;
+            background-color: white;
+            border-radius: 1px;
+        }
+        .f_left{
+            float: left;
+        }
+        .f_right{
+            float: right;
+        }
+        .box{
+            position: absolute;
+            top:50px;
+            left: 0;
+            width: 100%;
+            background-color: black;
+        }
+        .box .b_first{
+            height: 96px;
+        }
+        .box .b_first li{
+            line-height: 48;
+            height: 48px;
+            padding: 2px 10px;
+            box-sizing: border-box;
+        }
+        .box .b_first li input{
+            display: block;
+            width: 100%;
+            background-color: black;
+            border-radius: 3px;
+            border: none;
+            color: #ddd;
+            height: 30px;
+            padding: 4px 12px 4px 36px;
+            font-size: 14px;
+            line-height: 1.42857143;
+        }
+        .box .b_first li:first-of-type::before{
+            display: inline-block;
+            content: "";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background: url("../images/search.png") 7px 5px no-repeat #333;
+        }
+        .box .b_first li:nth-of-type(2){
+            position: relative;
+            width: 100%;
+            height: 48px;
+        }
+        .box .b_first li:nth-of-type(2) a{
+            display:block;
+            width: 100%;
+            height: 30px;
+            position: relative;
+        }
+        .box .b_first li:nth-of-type(2) a .toux{
+            display: inline-block;
+            margin: -5px 5px;
+            border-radius: 2px;
+            background-image: url(../images/head30.jpg);
+            width: 30px;
+            height: 30px;
+            position: absolute;
+        }
+        .box{
+            display: none;
+            z-index: 999;
+        }
+
+        .box .b_second li a{
+            padding: 0 13px;
+            height: 50px;
+            margin: 0;
+            position: relative;
+            display: block;
+            color: #9d9d9d;
+        }
+        .box .b_second li a .myicon {
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+            background-image: url("../images/meinicon@2x.png");
+            background-size: 400%;
+            margin-top: 11px;
+            float: left;
+        }
+        a i.icon-home {
+            background-position: 0 0;
+        }
+        .box .b_second li a span {
+            float: left;
+            line-height: 24px;
+            padding: 0 4px;
+            margin-top: 13px;
+        }
+        a .icon-inspiration{
+            background-position: -48px 0;
+        }
+        a i.icon-discovery {
+            background-position: -24px 0;
+        }
+        .box .b_third{
+            padding: 2px 10px;
+            box-sizing: border-box;
+        }
+        .box .b_third .down .span span:first-of-type{
+            display:inline-block;
+            line-height: 24px;
+            padding: 0 4px;
+            margin-top: 13px;
+            color: #9d9d9d;
+        }
+        .box .b_third li ul{
+            display: none;
+        }
+        .box .b_third a{
+            display: block;
+            padding: 3px 0;
+            clear: both;
+            font-weight: 400;
+            line-height: 1.42857143;
+            color: #9d9d9d;
+            white-space: nowrap;
+        }
+        .down .span span:nth-of-type(2){
+            display: inline-block;
+            width: 0;
+            height: 0;
+            color:#9d9d9d;
+            margin-left: 2px;
+            vertical-align: middle;
+            border-top: 4px dashed;
+            border-right: 4px solid transparent;
+            border-left: 4px solid transparent;
+        }
+        .down ul li{
+            padding: 0 30px;
+        }
+    </style>
+</head>
+<body >
+
+
+<div class="container" id="container">
+<header>
+    <div class="h_left f_left">
+        <img src="../images/cnulogo.png" alt="">
+    </div>
+    <div class="h_right f_right">
+        <button id="slidetoggle" value="隐藏">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="box" id="box">
+        <ul class="b_first">
+            <li>
+                <input type="text" placeholder="搜索">
+            </li>
+            <li>
+                <a href="#">
+                    <i class="toux"></i>
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+        <ul class="b_second">
+            <li>
+                <a href="../php/shouye.php">
+                    <i class="myicon icon-home"></i>
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="linggan.html"><i class="myicon icon-inspiration"></i>
+                    <span>灵感</span>
+                </a>
+            </li>
+            <li>
+                <a href="yuanchuang.html">
+                    <i class="myicon icon-discovery"></i>
+                    <span>原创</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="b_third">
+            <li class="down">
+                <a href="#" class="span">
+                    <span>投稿</span>
+                    <span></span>
+                </a>
+
+                <ul>
+                    <li>
+                        <a href="yuanchuangtuji.html">原创图集</a>
+                    </li>
+                    <li>
+                        <a href="yuanchuangjiaochen.html">原创教程</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="down">
+                <a href="#" class="span">
+                    <span>消息</span>
+                    <span></span>
+                </a>
+
+                <ul>
+                    <li><a href="information.html">评论</a></li>
+                    <li><a href="information.html">回复</a></li>
+                    <li><a href="information.html">推荐</a></li>
+                    <li><a href="information.html">粉丝</a></li>
+                </ul>
+
+            </li>
+            <li class="down">
+                <a href="#" class="span">
+                    <span>通知</span>
+                </a>
+
+            </li>
+            <li class="down">
+                <a href="#" class="span">
+                    <span>设置</span>
+                    <span></span>
+                </a>
+
+
+                <ul>
+                    <li><a href="">English</a></li>
+                    <li><a href="../php/person_setting.php">个人设置</a></li>
+                    <li><a href="login.html">退出</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</header>
+   
+    <div class="head">
+        <h2 > 爱在日落黄昏 | Leonardo Lomurno ​​​​</h2>
+        <span class="bianji">编辑：<a href="#">黄英</a></span>
+        <span class="tuijian">推荐:64</span>
+        <input class="yuedu" id="yuedu"  type="button" value="">
+        <script>
+    window.onload = function() {
+        var caution = false
+        function setCookie(name, value, expires, path, domain, secure) {
+            var curCookie = name + "=" + escape(value) + ((expires) ? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "")
+            if (!caution || (name + "=" + escape(value)).length <= 4000) document.cookie = curCookie
+            else if (confirm("Cookie exceeds 4KB and will be cut!")) document.cookie = curCookie
+        }
+
+        function getCookie(name) {
+            var prefix = name + "="
+            var cookieStartIndex = document.cookie.indexOf(prefix)
+            if (cookieStartIndex == -1) return null
+            var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
+            if (cookieEndIndex == -1) cookieEndIndex = document.cookie.length
+            return (document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
+        }
+
+        function deleteCookie(name, path, domain) {
+            if (getCookie(name)) {
+                document.cookie = name + "=" + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") +
+                        "; expires=Thu, 01-Jan-70 00:00:01 GMT"
+            }
+        }
+
+        function fixDate(date) {
+            var base = new Date(0)
+            var skew = base.getTime()
+            if (skew > 0) date.setTime(date.getTime() - skew)
+        }
+
+        var now = new Date()
+        fixDate(now)
+        now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
+        var visits = getCookie("counter")
+        if (!visits) visits = 1
+        else visits = parseInt(visits) + 1
+        setCookie("counter", visits, now)
+       var s=document.getElementById("yuedu");
+        s.value="阅读:"+visits;
+//       s.innerHTML("阅读" + visits);
+
+    }
+
+</script>
+
+    </div>
+        <div class="main" id="main">
+            <p>34525</p>
+            <p>432432434</p>
+            <div class="picture">
+                <img src="../images/cxd1.jpg" alt="" class="img">
+            </div>
+            <div class="picture">
+                <img src="../images/cxd2.jpg" alt="" class="img">
+            </div>
+        </div>
+    <script>
+            var picture = document.getElementsByClassName("picture");
+            var img = document.getElementsByClassName("img");
+            var container = my$("container");
+            var lengthpic = picture.length;
+            function hiddenandShow() {
+                    for (var i = 0; i < picture.length; i++) {
+                        for (var j = 0; j < img.length; j++) {
+                            img[i].onclick = function () {
+                                index = false;
+                                var div11 = document.createElement("div");
+                                div11.className = "bigbac";
+                                var img11 = document.createElement("img");
+                                img11.src =  this.src;
+                                img11.className = "bigimg";
+                                div11.appendChild(img11);
+                                document.querySelector("body").appendChild(div11);
+                                document.querySelector(".bigbac").onclick = function(){
+                                    document.querySelector("body").removeChild(this);
+
+                            }
+                        }
+                    }
+                }
+                }
+
+            hiddenandShow();
+    </script>
+    <div class="jieshao">
+        <div class="shang">
+            <a href="#"></a>
+            <span>黄英</span>
+            <input type="button" value="+ 关注" class="name" id="guanzhu">
+            <input  class="shoucang" id="shoucang">
+            <input  class="dianzan" id="dianzan">
+        </div>
+        <script>
+                  var index = true;
+                    my$("guanzhu").onclick = function () {
+                        if(index == true){
+                            index = false;
+                            my$("guanzhu").value = "取消关注";
+                        }
+                        else {
+                            index = true;
+                            my$("guanzhu").value = "+ 关注";
+                        }
+                    }
+        </script>
+        <script>
+            var index = true;
+            my$("shoucang").onclick = function(){
+                if(index == true){
+                    index = false;
+                    my$("shoucang").className= "shoucang1";
+                }
+                else{
+                    index = true;
+                    my$("shoucang").className = "shoucang";
+                }
+
+            }
+        </script>
+        <script>
+            var index = true;
+            my$("dianzan").onclick = function(){
+                if(index == true){
+                    index = false
+                    my$("dianzan").className= "dianzan1";
+                }
+                else{
+                    index = true;
+                    my$("dianzan").className = "dianzan";
+                }
+
+            }
+        </script>
+        <div class="xia">
+            <span>分类 ： <a href="#">大师级摄影作品集</a></span>
+            <span >版权：原创，CC协议共享(署名)</span>
+        </div>
+    </div>
+    <div class="pinglun">
+        <h2>评论:</h2>
+        <form action="post">
+           <span></span>
+            <input type="text" class="icon_text" value="" placeholder="好看的话鼓励一下作者吧" id="icon_text">
+            <input type="button" value="评论" class="icon_pinglun" id="icon_pinglun">
+        </form>
+    </div>
+    <div class="liuyan" id="liuyan">
+        <div class="hua clearfix">
+            <img src="../images/cxd6.jpg" alt="">
+            <a href="#">小脑虎</a>
+            <span class="liuy_one" id="liuy_one">有谁能比我知道，你的温柔像羽毛</span>
+            <input type="button" value="回复" class="huifu">
+            <span></span>
+        </div>
+
+</div>
+</body>
+<script>
+    var icon_text = my$("icon_text");
+    var liuy_one = my$("liuy_one");
+    var liuyan = my$("liuyan");
+    my$("icon_pinglun").onclick = function(e){
+        var oev = e || window.event;
+        if (icon_text.value == "" || icon_text.value.length == 0){
+          return;
+       }else{
+            var div1 = document.createElement("div");
+            div1.className = "hua1";
+            div1.style.width = "100%";
+            div1.style.height= "100px";
+            div1.style.margin = "40px auto";
+            div1.style.borderBottom = "1px dashed darkgrey";
+            div1.style.width = "100%";
+            div1.style. padding = "20px";
+            div1.style. position = "relative";
+            liuyan.appendChild(div1);
+            var img = document.createElement("img");
+            img.src = "../images/cxd3.jpg";
+            img.style. width = "50px";
+            img.style. height = "50px";
+            img.style. borderRadius = "5px";
+            img.style. position = "absolute";
+            img.style. left = "21%";
+            img.style. top = "15%";
+            div1.appendChild(img);
+            var a = document.createElement("a");
+            a.style.cssText = "  color: #94B5AE;font-size: 14px;font-family: inherit;font-weight: 500;position: absolute;left: 40%;top: 20%;";
+            a.innerText = "小胸许";
+            div1.appendChild(a);
+            var span1 = document.createElement("span");
+            span1.style.cssText = " display: inline-block;font-size: 14px;font-family: inherit;font-weight: 500;position: absolute;left: 40%;top: 35%;";
+            span1.innerText = icon_text.value;
+            icon_text.value = "";
+            div1.appendChild(span1);
+            div1.appendChild(img);
+            var input  = document.createElement("input");
+            input .style.cssText = "display: inline-block;border: hidden;position: absolute;left: 70%;top: 20%;";
+            input.value = "回复";
+            input.type = "button";
+            div1.appendChild(input );
+        }
+
+    }
+
+</script>
+</html>
+<script>
+    my$("slidetoggle").onclick=function () {
+        if(this.value=="隐藏"){
+            this.value="显示";
+            my$("box").style.display="block";
+            my$("content").style.top="422px";
+
+        }
+        else{
+            this.value="隐藏";
+            my$("box").style.display="none";
+            my$("content").style.top="0";
+        }
+
+    }
+</script>
+<!--分组-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".down .span").click(function () {
+            var $x=$(this).nextAll();
+            if($x.is(":hidden")){
+                $x.show();
+                $(this).parent().siblings().children(":first").nextAll().hide();
+            }
+            else {
+                $x.hide();
+            }
+        })
+    });
+</script>
+

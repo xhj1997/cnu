@@ -1,0 +1,90 @@
+
+.container{
+    width: 100%;
+}
+.container .main {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    column-gap:5px;
+    column-count: 2;
+    position: relative;
+    padding-left: 6px;
+    padding-top: 8px;
+    padding-right: 6px;
+}
+.container .main .pic {
+    width: 96%;
+    break-inside: avoid;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right:10px ;
+}
+@media (min-width: 60px) and (max-width: 230px) {
+    .main {
+        column-count: 1;
+    }
+}
+.container .main .daohang{
+    height: 120px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    margin-top: 8px;
+}
+.container .main .daohang .zi{
+    position: relative;
+}
+.container .main .daohang .zi a{
+    display: block;
+    text-align:left;
+    font-family: inherit;
+    font-weight: 500;
+}
+.container .main .daohang .zi a:first-child{
+    font-size: 30px;
+    color: red;
+    line-height: 30px;
+    position: absolute;
+    top: 35px;
+    left: 25px;
+}
+.container .main .daohang .zi a:last-child{
+    font-size: 24px;
+    line-height: 24px;
+    position: absolute;
+    top: 80px;
+    left: 25px;
+}
+
+
+.container .main .pic a{
+
+    width: 100%;
+}
+.container .main .pic a img{
+    width: 100%;
+    height: 100%;
+}
+.container .bottom {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+.container .bottom .button{
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    left: 35%;
+}
+.container .bottom .button a{
+    display: inline-block;
+    border: 1px solid gray;
+    text-align: center;
+    font-size: 14px;
+    width: 20%;
+    padding: 5px 14px;
+    border-radius: 15px;
+}
+.container .bottom .button a:last-child{
+    color: black;
+}

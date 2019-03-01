@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原创图集</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/yuanchuangtuji.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <script src="../js/scrolltop.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../src/wysiwyg.js"></script>
+    <script type="text/javascript" src="../src/wysiwyg-editor.js"></script>
+    <!-- github.io delivers wrong content-type - but you may want to include FontAwesome in 'wysiwyg-editor.css' -->
+    <link rel="stylesheet" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+    <link rel="stylesheet" type="text/css" href="../src/wysiwyg-editor.css" />
+</head>
+<body>
+<header>
+    <div class="h_left f_left">
+        <img src="../images/cnulogo.png" alt="">
+    </div>
+    <div class="h_right f_right">
+        <button id="slidetoggle" value="隐藏">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="box" id="box">
+        <ul class="b_first">
+            <li>
+                <input type="text" placeholder="搜索">
+            </li>
+            <li>
+                <a href="#">
+                    <i class="toux"></i>
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+        <ul class="b_second">
+            <li>
+                <a href="../php/shouye.php">
+                    <i class="myicon icon-home"></i>
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="linggan.html"><i class="myicon icon-inspiration"></i>
+                    <span>灵感</span>
+                </a>
+            </li>
+            <li>
+                <a href="yuanchuang.html">
+                    <i class="myicon icon-discovery"></i>
+                    <span>原创</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="b_third">
+            <li class="down">
+                <a href="#" class="span">
+                    <span>投稿</span>
+                    <span></span>
+                </a>
+
+                <ul>
+                    <li>
+                        <a href="yuanchuangtuji.html">原创图集</a>
+                    </li>
+                    <li>
+                        <a href="yuanchuangjiaochen.html">原创教程</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="down">
+                <a href="#" class="span">
+                    <span>消息</span>
+                    <span></span>
+                </a>
+
+                <ul>
+                    <li><a href="information.html">评论</a></li>
+                    <li><a href="information.html">回复</a></li>
+                    <li><a href="information.html">推荐</a></li>
+                    <li><a href="information.html">粉丝</a></li>
+                </ul>
+
+            </li>
+            <li class="down">
+                <a href="#" class="span">
+                    <span>通知</span>
+                </a>
+
+            </li>
+            <li class="down">
+                <a href="#" class="span">
+                    <span>设置</span>
+                    <span></span>
+                </a>
+
+
+                <ul>
+                    <li><a href="">English</a></li>
+                    <li><a href="../php/person_setting.php">个人设置</a></li>
+                    <li><a href="login.html">退出</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</header>
+
+
+<div class="second_nav">
+<h4 class="container">
+    <span>投稿></span>
+    原创图集
+</h4>
+</div>
+<form action="#" method="POST">
+   <div class="main container">
+    <div class="row">
+        <div class="left col">
+            <div class="form-groupy">
+                <input type="text" class="form_control" placeholder="标题">
+            </div>
+            <div class="form-groupy">
+                  <textarea id="editor1" name="editor" placeholder="Type your text here...">
+
+  </textarea>
+            </div>
+            <ul id="image" class="dropzone dz-clickable">
+                <div class="dz-default dz-message">
+
+                </div>
+            </ul>
+        </div>
+        <div class="right col">
+            <div class="form-groupy row">
+                <label for="tags" class="col control-label">标签：</label>
+                <div class="col">
+                    <input id="tags" class="form-control" style="width: 100%; display: none;" name="tags" type="text">
+                    <div id="tags_tagsinput" class="tagsinput" style="width: 100%; height: 45px;">
+                        <div id="tags_addTag">
+                            <input id="tags_tag" value="" placeholder="Tag" style="color: rgb(102, 102, 102); width: 88px;">
+                        </div><div class="tags_clear">
+                    </div>
+                    </div>
+
+                    <div class="tagPanel">
+                        <h5>题材</h5>
+                        <span class="label label-default select_tag">人像</span>
+                        <span class="label label-default select_tag">人文</span>
+                        <span class="label label-default select_tag">私房</span>
+                        <span class="label label-default select_tag">儿童</span>
+                        <span class="label label-default select_tag">风光</span>
+                        <span class="label label-default select_tag">旅行</span>
+                        <span class="label label-default select_tag">城市</span>
+                        <span class="label label-default select_tag">建筑</span>
+                        <span class="label label-default select_tag">生活</span>
+                        <span class="label label-default select_tag">水下</span>
+                        <span class="label label-default select_tag">街拍</span>
+                        <span class="label label-default select_tag">时尚</span>
+                        <span class="label label-default select_tag">美女</span>
+                        <span class="label label-default select_tag">夜景</span>
+                        <span class="label label-default select_tag">自然</span>
+                        <span class="label label-default select_tag">生态</span>
+                        <span class="label label-default select_tag">静物</span>
+                        <span class="label label-default select_tag">动物</span>
+                        <span class="label label-default select_tag">植物</span>
+                        <span class="label label-default select_tag">光影</span>
+                        <span class="label label-default select_tag">婚礼</span>
+                        <span class="label label-default select_tag">家庭</span>
+
+                        <h5>风格</h5>
+                        <span class="label label-default select_tag">印象</span>
+                        <span class="label label-default select_tag">写实</span>
+                        <span class="label label-default select_tag">抽象</span>
+                        <span class="label label-default select_tag">黑白</span>
+                        <span class="label label-default select_tag">彩色</span>
+                        <span class="label label-default select_tag">情绪</span>
+                        <span class="label label-default select_tag">日系</span>
+                        <span class="label label-default select_tag">欧美</span>
+                        <span class="label label-default select_tag">极简主义</span>
+                        <span class="label label-default select_tag">超现实主义</span>
+                        <span class="label label-default select_tag">胶片</span>
+                        <span class="label label-default select_tag">森系</span>
+                        <span class="label label-default select_tag">荒诞</span>
+                        <span class="label label-default select_tag">微距</span>
+                        <span class="label label-default select_tag">纪实</span>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="form-groupy row">
+                <label class="col control-label">版权：</label>
+                <div class="col">
+                    <select id="license_id" class="form_control" name="license_id">
+                        <option value="2">原创，CC协议共享(署名)</option>
+                        <option value="3">原创，CC协议共享(署名-非商业性使用)</option>
+                        <option value="4">原创，CC协议共享(署名-禁止演绎)</option>
+                        <option value="5">原创，CC协议共享(署名-相同方式共享)</option>
+                        <option value="6">原创，CC协议共享(署名-非商业性使用-禁止演绎)</option>
+                        <option value="7">原创，CC协议共享(署名-非商业性使用-相同方式共享)</option>
+                    </select>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+    <div id="operation" class="navbar navbar-fixed-bottom navbar-default">
+        <input class="btn btn-danger" id="topic-create-submit" type="submit" value="保存">
+    </div>
+</form>
+<div class="pageFooter footer1">
+    <span>@ CNU视觉联盟（www.cnu.cc）</span>
+    <span>
+        <a target="_blank" href="http://www.miitbeian.gov.cn/" style="color:#666666">
+            粤ICP备10023979号-3</a>
+    </span>
+
+</div>
+<div class="" id="scrollUp"></div>
+</body>
+<script>
+    my$("slidetoggle").onclick=function () {
+        if(this.value=="隐藏"){
+            this.value="显示";
+            my$("box").style.display="block";
+            my$("content").style.top="422px";
+
+        }
+        else{
+            this.value="隐藏";
+            my$("box").style.display="none";
+            my$("content").style.top="0";
+        }
+
+    }
+</script>
+<!--分组-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".down .span").click(function () {
+            var $x=$(this).nextAll();
+            if($x.is(":hidden")){
+                $x.show();
+                $(this).parent().siblings().children(":first").nextAll().hide();
+            }
+            else {
+                $x.hide();
+            }
+        })
+    });
+</script>
+</html>

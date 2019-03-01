@@ -1,0 +1,536 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 50px;
+   
+  line-height: 1.8;
+  font-family: "lato-regular", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #ABABAB;
+  border-top: 1px solid #e5e5e5;
+}
+.footer a{
+  color: #ABABAB;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+/*
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}*/
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1180px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 15px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+.dropdown-menu .name{
+    line-height: 15px;
+}
+.dropdown-menu .badge{
+    margin-top: 1px;
+    margin-right: -10px;
+}
+.publishBtn{
+    margin-right: 10px;
+}
+.messageLi .message{
+    height: 24px;
+    width:24px;
+    background-image: url("../images/set.png");
+    background-position: 0 0;
+}
+.messageLi a:hover .message{
+    background-position:  0 -24px;
+}
+
+.settingLi .setting{
+    height: 24px;
+    width:24px;
+    background-image: url("../images/set.png");
+    background-position: -24px 0;
+}
+.settingLi a:hover .setting{
+    background-position: -24px -24px;
+}
+.messageLi .dropdown-toggle .badge{
+    position: absolute;
+    background-color:#cc0000 ;
+    right:0px;
+    top:5px;
+}
+.messageLi .dropdown-toggle{
+    padding: 13px 10px;
+
+
+}
+.settingLi .dropdown-toggle{
+    padding: 13px 10px;
+}
+#userNav{
+    padding-left: 0px;
+    height: 50px;
+}
+#userNav img{
+    margin: -5px 5px;
+    border-radius: 2px;
+}
+
+
+
+.main {
+  background: white;
+  padding: 15px 20px;
+  box-shadow: 0 .2em 0 0 #ddd,0 0 0 1px #ddd;
+  border-radius: 2px;
+}
+
+.brand {
+  line-height: 48px;
+  margin-top: 0px;
+}
+
+.meta {
+  color: #888;
+  margin: 11px 0px 0px;
+}
+
+.meta .label-default {
+    background-color: #eee;
+    color: #888;
+    font-weight: normal;
+}
+
+.list-group-item {
+  margin-bottom: 0px;
+  border:none;
+  border-bottom: 1px dashed #ccc;
+}
+
+a.list-group-item:hover, a.list-group-item:focus {
+    text-decoration: none;
+    color: #555;
+    background-color: #F4EEDE;
+}
+
+.content {
+    min-height: 300px;
+}
+.content form {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+h1 {
+    font-size: 1.7em;
+}
+.lead {
+    font-size: 1.1em;
+}
+
+.article-meta, .article-meta a, .article-meta a:hover {
+    color: #ABABAB;
+    text-decoration: none;
+}
+.meta, .meta a, .meta a:hover {
+    color: #ABABAB;
+    text-decoration: none;
+}
+
+
+.filter-header {
+    margin-left: 10px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+
+
+/*----------------------- nprogress -----------------------*/
+/* Make clicks pass-through */
+#nprogress {
+  pointer-events: none; }
+
+#nprogress .bar {
+  background: #55D8BE;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; }
+
+/* Fancy blur effect */
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px #55D8BE, 0 0 5px #55D8BE;
+  opacity: 1;
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+  -ms-transform: rotate(3deg) translate(0px, -4px);
+  transform: rotate(3deg) translate(0px, -4px); }
+
+/* Remove these to get rid of the spinner */
+#nprogress .spinner {
+  display: block;
+  position: fixed;
+  z-index: 1031;
+  top: 15px;
+  right: 15px; }
+
+#nprogress .spinner-icon {
+  width: 18px;
+  height: 18px;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  border: solid 2px transparent;
+  border-top-color: #55D8BE;
+  border-left-color: #55D8BE;
+  border-radius: 50%;
+  -webkit-animation: nprogress-spinner 400ms linear infinite;
+  animation: nprogress-spinner 400ms linear infinite; }
+
+.nprogress-custom-parent {
+  overflow: hidden;
+  position: relative; }
+
+.nprogress-custom-parent #nprogress .spinner, .nprogress-custom-parent #nprogress .bar {
+  position: absolute; }
+
+@-webkit-keyframes nprogress-spinner {
+  0% {
+    -webkit-transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes nprogress-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+/*----------------------- nprogress End -----------------------*/
+
+/*----------------------- scrollUp -----------------------*/
+
+/* Image style */
+#scrollUp {
+  background-image: url("../images/r_bottom.png");
+    background-position: 0 0 !important;
+  bottom: 20px;
+  right: 0px;
+  width: 36px;
+  /* Width of image */
+  height: 36px;
+  /* Height of image */
+  text-indent: -999999px;
+}
+
+
+/*----------------------- scrollUp End -----------------------*/
+
+
+
+/*----------------custom--------*/
+
+div#logo{margin-top: 8px;padding: 0;background-image: url("../images/cnulogo.png");width:89px;height:34px;}
+
+nav.navbar{border: none}
+.navbar-inverse .navbar-nav > .publishBtn > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{background-color: #cc0000;}
+.nav>li>a:focus,.nav>li>a:hover{background: none}
+.second-nav{margin: 0; border-bottom:1px solid #888;height:50px;margin-bottom: 15px}
+ .second-nav li{height:50px;}
+.second-nav li a{font-size: 18px;color:#444;padding-top: 14px;}
+.second-nav li.select a{color:#cc0000;}
+.second-nav li a:hover{background:none;color:#cc0000;}
+
+
+
+.work-thumbnail{padding:5px 5px 5px 5px;margin: 0px; border: none;position:relative;overflow: hidden;}
+.work-thumbnail .title{position:absolute;bottom: -18px;  left:16px;;
+    font-size: 16px;line-height:20px;color: white;opacity: 0.0;                    /* Firefox, Safari(WebKit), Opera */
+    -ms-filter: "alpha(opacity=0)";z-index: 99;}
+.work-thumbnail .author{position:absolute; bottom: 0px;  left:5px;right:5px;
+    padding: 66px 11px 0;
+    line-height: 10px;font-size: 10px;color: white;opacity: 0.0;                    /* Firefox, Safari(WebKit), Opera */
+    -ms-filter: "alpha(opacity=0)";z-index: 98;height: 86px;
+    background: url("../images/home_Shadow.png") repeat-x ;
+
+}
+.work-thumbnail .count{background:url("../images/Atlas_min_black02.png"); opacity:0.6;width:32px;height:29px;position:absolute; bottom: 10px;  right:16px;;font-size: 12px;color: #eee;text-align: center;line-height: 29px; }
+
+.work-thumbnail .btnImg{
+    position:absolute;
+    top: -30px;  right:16px;
+    width:40px;
+    height: 40px;
+    background:#000;
+    opacity: 0.0;                    /* Firefox, Safari(WebKit), Opera */
+    -ms-filter: "alpha(opacity=0)"; /* IE 8 */
+    border-radius: 4px;
+}
+.work-thumbnail .btnImg.over{
+    opacity: 0.4;                    /* Firefox, Safari(WebKit), Opera */
+    -ms-filter: "alpha(opacity=40)"; /* IE 8 */
+}
+.work-thumbnail .rcm{
+    position:absolute;
+    z-index: 99;
+    top: -30px;
+    right:16px;
+    width:40px;
+    height: 40px;
+    background:url(../images/zan_cang_40-40.png) transparent 0 -2px;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    border:none;
+    opacity: 0.0;                    /* Firefox, Safari(WebKit), Opera */
+    -ms-filter: "alpha(opacity=0)"; /* IE 8 */
+}
+.work-thumbnail .unrcm{
+    background:url(../images/zan_cang_40-40.png) transparent 0 -42px;
+}
+.work-thumbnail.mobile{padding:1px!important;}
+ .thumbnail{padding:0px;margin: 0px; border: none;border-radius: 0;background-color: transparent;
+     }
+
+
+.alert{margin: 0}
+
+
+.pager_box{margin-bottom:60px;width: 100%; text-align: center;}
+.pager_box li.active span{background-color:#222;border-color: #222;}
+.pager_box li.active span:hover{background-color:#333}
+.pager_box li a{color:#222}
+
+.nav-pills a:visited,.nav-pills a:active{background: transparent}
+
+#operation{background: white;text-align: center; padding-top:8px;height: 50px; }
+#operation .btn{width:120px;margin-left: 20px;}
+
+.avatar50{
+    border: solid 1px #ccc;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.avatar{
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.timeago{
+    cursor:pointer;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{
+    outline: none;
+}
+
+
+.bodyImg{
+    cursor:pointer;
+}
+
+#navbar a i.myicon{
+
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background: url("../images/meinicon.png");
+    margin-top: 11px;
+    float: left;
+}
+#navbar a i.icon-home{
+    background-position:0 0 ;
+
+}
+#navbar li.active i.icon-home,#navbar a:hover i.icon-home,#navbar a:focus i.icon-home{
+    background-position:0 -24px ;
+}
+#navbar a i.icon-discovery{
+    background-position:-24px 0 ;
+}
+
+#navbar li.active i.icon-discovery, #navbar a:hover i.icon-discovery, #navbar a:focus i.icon-discovery{
+    background-position:-24px -24px ;
+}
+#navbar a i.icon-inspiration{
+    background-position:-48px 0 ;
+}
+#navbar li.active i.icon-inspiration,#navbar a:hover i.icon-inspiration,#navbar a:focus i.icon-inspiration{
+    background-position:-48px -24px ;
+}
+#navbar a i.icon-contest{
+    background-position:-72px 0 ;
+}
+#navbar li.active i.icon-contest,#navbar a:hover i.icon-contest,#navbar a:focus i.icon-contest{
+    background-position:-72px -24px ;
+}
+#navbar a span{
+    float: left;
+    line-height: 24px;
+    padding: 0px 4px;
+    margin-top: 13px;
+}
+
+#navbar a{
+    padding: 0px 13px;
+    height: 50px;
+    margin: 0;
+}
+
+
+.search-group input.search-control{
+    background: url("../images/search.png") 7px 5px no-repeat #333 ;
+    border-radius: 3px;
+    border: none;
+    color: #ddd;
+    height: 30px;
+    padding: 4px 12px 4px 36px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin: 2px 6px;
+
+
+}
+.search-group input.search-control:-webkit-input-placeholder { color: #888;}
+.search-group input.search-control:focus{
+   box-shadow: none;
+    outline: none;
+}
+.search-group.mobile{
+    width: 100%;
+    padding: 5px 15px 10px;
+
+}
+.search-group.mobile input{
+    width: 100%;
+    margin: 0;
+}
+#navbarMoblie li{
+    border-bottom: 1px solid transparent;
+    border-color: #101010;
+    -webkit-box-shadow:  0 1px 0 rgba(255,255,255,.1);
+    box-shadow:  0 1px 0 rgba(255,255,255,.1);
+}
+#navbarMoblie #userNav{
+    padding-top: 5px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5){
+    div#logo{/* 高清显示屏(设备像素比例大于等于1.5)使用2倍图  */
+        background-image: url("../images/cnulogo@2x.png")!important;
+        background-size:contain;
+    }
+    #scrollUp {
+        background-image: url("../images/r_bottom@2x.png");
+        background-size:300%;
+    }
+    .l_bottom {
+        background-image: url("../images/r_bottom@2x.png");
+        background-size:300%;
+    }
+    .messageLi .message{
+        background-image: url("../images/set@2x.png");
+        background-size:200%;
+    }
+
+    .settingLi .setting{
+        background-image: url("../images/set@2x.png");
+        background-size:200%;
+
+    }
+    #navbar a i.myicon {
+
+        background-image: url("../images/meinicon@2x.png");
+        background-size:400%;
+    }
+}
+.pageFooter{
+    background: #333;
+    color: #aaa;
+    padding-top: 20px;
+    font-size: 12px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}

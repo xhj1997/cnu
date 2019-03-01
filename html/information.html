@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/information.css">
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery-1.8.2.js"></script>
+    
+
+</head>
+<body>
+<header>
+    <div class="h_left f_left">
+        <img src="../images/cnulogo.png" alt="">
+    </div>
+    <div class="h_right f_right">
+        <button id="slidetoggle" value="隐藏">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="box" id="box">
+        <ul class="b_first">
+            <li>
+                <input type="text" placeholder="搜索">
+            </li>
+            <li>
+                <a href="#">
+                    <i class="toux"></i>
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+        <ul class="b_second">
+            <li>
+                <a href="../php/shouye.php">
+                    <i class="myicon icon-home"></i>
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="linggan.html"><i class="myicon icon-inspiration"></i>
+                    <span>灵感</span>
+                </a>
+            </li>
+            <li>
+                <a href="yuanchuang.html">
+                    <i class="myicon icon-discovery"></i>
+                    <span>原创</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="b_third">
+            <li class="down">
+                <a href="#" class="span">
+                    <span>投稿</span>
+                    <span></span>
+                </a>
+
+                <ul>
+                    <li>
+                        <a href="yuanchuangtuji.html">原创图集</a>
+                    </li>
+                    <li>
+                        <a href="yuanchuangjiaochen.html">原创教程</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="down">
+                <a href="#" class="span">
+                    <span>消息</span>
+                    <span></span>
+                </a>
+
+                <ul>
+                    <li><a href="information.html">评论</a></li>
+                    <li><a href="information.html">回复</a></li>
+                    <li><a href="information.html">推荐</a></li>
+                    <li><a href="information.html">粉丝</a></li>
+                </ul>
+
+            </li>
+            <li class="down">
+                <a href="#" class="span">
+                    <span>通知</span>
+                </a>
+
+            </li>
+            <li class="down">
+                <a href="#" class="span">
+                    <span>设置</span>
+                    <span></span>
+                </a>
+
+
+                <ul>
+                    <li><a href="">English</a></li>
+                    <li><a href="../php/person_setting.php">个人设置</a></li>
+                    <li><a href="login.html">退出</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</header>
+
+    <div class="content" id="content" style="margin-left:0">
+        <div class="tab">
+            <span class="current">回复</span>
+            <span>评论</span>
+            <span>推荐</span>
+            <span>粉丝</span>
+        </div>
+        <div class="container">
+            <div class="con current">
+ <ul id="pn">
+    <li class="list0">
+        <a class="close" style="margin-right:15px" href="javascript:;">X</a>
+        <div class="head"><img src="../images/16.jpg" alt=""/></div>
+        <div class="content">
+            <p class="text"><span class="name">Andy：</span>哈哈哈哈哈谁还没个妈～//@我的朋友是个呆B: 饮水机那个蕾丝罩我给跪了//@八卦_我实在是太CJ了:仿佛看到了自己家</p>
+            <div class="pic"><img src="../images/19.jpg" style="width:20px;height:25px;" alt=""/></div>
+            <div class="good"><span class="date">02-14 23:01</span><a class="dzan" href="javascript:;">赞</a></div>
+            <div class="people" total="2980">2980人觉得很赞</div>
+            <div class="comment-list">
+                <div class="comment" user="self">
+                    <div class="comment-left"><img src="../images/15.jpg" alt=""/></div>
+                    <div class="comment-right">
+                        <div class="comment-text"><span class="user">小海豚：</span>回家要挨揍了，哈哈哈</div>
+                        <div class="comment-date">02-14 22:00
+                            <a class="comment-zan" href="javascript:;" total="23" my="1">23 取消赞</a>
+                            <a class="comment-dele" href="javascript:;">回复</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment" user="self">
+                    <div class="comment-left"><img src="../images/18.jpg" alt=""/></div>
+                    <div class="comment-right">
+                        <div class="comment-text"><span class="user">我：</span>哈哈哈，同款妈妈</div>
+                        <div class="comment-date">02-14 24:00
+                            <a class="comment-zan" href="javascript:;" total="0" my="0">赞</a>
+                            <a class="comment-dele" href="javascript:;">删除</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hf">
+                <textarea type="text" class="hf-text" autocomplete="off" maxlength="100">评论…</textarea>
+                <button class="hf-btn">回复</button>
+                <span class="hf-nub">0/100</span>
+            </div>
+        </div>
+    </li>
+    <li class="list0">
+        <a class="close" style="margin-right:15px" href="javascript:;">X</a>
+        <div class="head"><img src="../images/13.jpg" alt=""/></div>
+        <div class="content">
+            <p class="text"><span class="name">Andy：</span>哈哈哈哈哈谁还没个妈～//@我的朋友是个呆B: 饮水机那个蕾丝罩我给跪了//@八卦_我实在是太CJ了:仿佛看到了自己家</p>
+            <div class="pic"><img src="../images/18.jpg" style="width:20px;height:25px;" alt=""/></div>
+            <div class="good"><span class="date">02-14 23:01</span><a class="dzan" href="javascript:;">赞</a></div>
+            <div class="people" total="0" style="display: none;"></div>
+            <div class="comment-list">
+                <div class="comment" user="self">
+                    <div class="comment-left"><img src="../images/18.jpg" alt=""/></div>
+                    <div class="comment-right">
+                        <div class="comment-text"><span class="user">我：</span>piupiupiu</div>
+                        <div class="comment-date">02-14 24:00
+                            <a class="comment-zan" href="javascript:;" total="286" my="1">286 取消赞</a>
+                            <a class="comment-dele" href="javascript:;">删除</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hf">
+                <textarea type="text" class="hf-text" autocomplete="off" maxlength="100">评论…</textarea>
+                <button class="hf-btn">回复</button>
+                <span class="hf-nub">0/100</span>
+            </div>
+        </div>
+    </li>
+</ul>
+
+</div>
+            <div class="con">
+        <div class="pinglun">
+            <h2>评论:</h2>
+            <form action="post">
+               <span></span>
+                <input type="text" class="icon_text" value=""       placeholder="好看的话鼓励一下作者吧" id="icon_text">
+                <input type="button" value="评论" class="icon_pinglun"        id="icon_pinglun">
+            </form>
+        </div>
+        <div class="liuyan" id="liuyan">
+            <div class="hua clearfix">
+                <img src="../images/11.jpg" alt="">
+                <a href="#">小脑虎</a>
+                <span class="liuy_one" id="liuy_one">       有谁能比我知道，你的温柔像羽毛</span>
+                <input type="button" value="回复" class="huifu">
+                <span></span>
+            </div>
+        
+        </div>
+                    </div>
+                    <div class="con">
+                    <div class="tuijian">
+                       <img src="../images/renxiang4.png"> 
+                       <img src="../images/renxiang5.png"> 
+                       <img src="../images/renxiang6.png">
+                       <img src="../images/renxiang11.png"> 
+                       <img src="../images/renxiang12.png"> 
+                       <img src="../images/renxiang13.png"> 
+                       <img src="../images/renxiang14.png"> 
+                       <img src="../images/renxiang15.png"> 
+                       <img src="../images/renxiang16.png"> 
+                    </div>
+                    </div>
+                    <div class="con">
+                <span class="tips"><a href="#">通知</a></span>
+                <hr>
+                <a href="#" class="allfans">所有粉丝</a>
+                <div class="fans clearfix">
+                    <ul>
+                        <li>
+                            <img src="../images/12.jpg">
+                            <p>我的耳朵可以动</p>
+                            <button class="btn">+关注</button>
+                        </li>
+                        <li>
+                            <img src="../images/11.jpg">
+                            <p>Annualis</p>
+                            <button class="btn">+关注</button>
+                        </li>
+                         <li>
+                            <img src="../images/17.jpg">
+                            <p>lauwaiyuk</p>
+                            <button class="btn">+关注</button>
+                        </li>
+                        <li>
+                            <img src="../images/13.jpg">
+                            <p>天要冷了</p>
+                            <button class="btn">+关注</button>
+                        </li>
+
+                         <li>
+                            <img src="../images/16.jpg">
+                            <p>听闻饶颖</p>
+                            <button class="btn">+关注</button>
+                        </li>
+                        <li>
+                            <img src="../images/15.jpg">
+                            <p>青猫lucky</p>
+                            <button class="btn">+关注</button>
+                        </li>
+                         <li>
+                            <img src="../images/14.jpg">
+                            <p>Simplemessage</p>
+                            <button class="btn">+关注</button>
+                        </li>
+                        <li>
+                            <img src="../images/11.jpg">
+                            <p>blanksdsdd</p>
+                            <button class="btn">+关注</button>
+                        </li>
+                        <li>
+                            <img src="../images/18.jpg">
+                            <p>cosmosssaee</p>
+                            <button class="btn" >+关注</button>
+                        </li>
+                        <li>
+                            <img src="../images/19.jpg">
+                            <p>Happiness丶we</p>
+                        <button class="btn">+关注</button>
+                            
+                        </li>
+
+                    </ul>
+                </div>
+                    </div>
+        
+                </div>
+    </div>
+    <div class="pageFooter">
+        <span>@ CNU视觉联盟（www.cnu.cc）</span><span><a target="_blank" href="http://www.miitbeian.gov.cn/" style="color:#666666">粤ICP备10023979号-3</a></span>
+
+    </div>
+
+
+</body>
+<script>
+    var icon_text = my$("icon_text");
+    var liuy_one = my$("liuy_one");
+    var liuyan = my$("liuyan");
+    my$("icon_pinglun").onclick = function(e){
+        var oev = e || window.event;
+        if (icon_text.value == "" || icon_text.value.length == 0){
+          return;
+       }else{
+            var div1 = document.createElement("div");
+            div1.className = "hua1";
+            div1.style.width = "100%";
+            div1.style.height= "100px";
+            div1.style.margin = "40px auto";
+            div1.style.borderBottom = "1px dashed darkgrey";
+            div1.style.width = "100%";
+            div1.style. padding = "20px";
+            div1.style. position = "relative";
+            liuyan.appendChild(div1);
+            var img = document.createElement("img");
+            img.src = "../images/15.jpg";
+            img.style. width = "50px";
+            img.style. height = "50px";
+            img.style. borderRadius = "5px";
+            img.style. position = "absolute";
+            img.style. left = "10%";
+            img.style. top = "15%";
+            div1.appendChild(img);
+            var a = document.createElement("a");
+            a.style.cssText = "  color: #94B5AE;font-size: 14px;font-family: inherit;font-weight: 500;position: absolute;left: 26%;top: 20%;";
+            a.innerText = "小胸许";
+            div1.appendChild(a);
+            var span1 = document.createElement("span");
+            span1.style.cssText = " display: inline-block;font-size: 14px;font-family: inherit;font-weight: 500;position: absolute;left:26%;top: 44%;";
+            span1.innerText = icon_text.value;
+            icon_text.value = "";
+            div1.appendChild(span1);
+            div1.appendChild(img);
+            var input  = document.createElement("input");
+            input .style.cssText = "display: inline-block;border: hidden;position: absolute;left: 70%;top: 20%;background-color: white;height: 20px;line-height: 18px;padding: 0 0 0 20px;margin: 0 5px;color: #ccc;";
+            input.value = "回复";
+            input.type = "button";
+            div1.appendChild(input );
+        }
+
+    }
+
+</script>
+
+
+
+<script>
+    my$("slidetoggle").onclick=function () {
+        if(this.value=="隐藏"){
+            this.value="显示";
+            my$("box").style.display="block";
+            my$("content").style.top="422px";
+
+        }
+        else{
+            this.value="隐藏";
+            my$("box").style.display="none";
+            my$("content").style.top="0";
+        }
+
+    }
+</script>
+<!--分组-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".down .span").click(function () {
+            var $x=$(this).nextAll();
+            if($x.is(":hidden")){
+                $x.show();
+                $(this).parent().siblings().children(":first").nextAll().hide();
+            }
+            else {
+                $x.hide();
+            }
+        })
+    });
+</script>
+<!--tab转换-->
+<script>
+    var allspan=document.querySelectorAll(".tab span");
+    var alcon=document.querySelectorAll(".container .con");
+    for(var i=0;i<allspan.length;i++){
+        allspan[i].index=i;
+        allspan[i].onclick=doClick;
+    }
+
+    function  doClick() {
+        for(var j=0;j<allspan.length;j++){
+            allspan[j].className="";
+        }
+        this.className="current";
+        var index=this.index;
+        for (var j=0;j<alcon.length;j++){
+            alcon[j].className="con";
+        }
+        alcon[index].className="con current";
+    }
+</script>
+<script type="text/javascript">
+    //在页面加载完后立即执行多个函数。
+    function addloadEvent(func){
+        var oldonload=window.onload;
+        if(typeof window.onload !="function"){
+            window.onload=func;
+        }
+        else{
+            window.onload=function(){
+                if(oldonload){
+                    oldonload();
+                }
+                func();
+            }
+        }
+    }
+    addloadEvent(b);
+    function b(){
+        var pn=document.getElementById("pn");
+        var lists=pn.children;
+        //删除当前节点
+        function remove(node){
+            node.parentNode.removeChild(node);
+        }
+        //上面的点赞
+        function praisebox(box,el){
+            //获取赞数量容器
+            var praise=box.getElementsByClassName("people")[0];
+            //获取容器当前total值
+            var total=parseInt(praise.getAttribute("total"));
+            //获取点击的innerHTML
+            var txt=el.innerHTML;
+            //创建一个新的total存储用
+            var newtotal;
+            //判断点击的文字内容
+            if(txt=="赞"){
+                //total值+1 因为我还没点击赞，所以要点击的时候就多了一个人 total+1
+                newtotal=total+1;
+                //判断赞数量 把相应文字放到赞容器里
+                praise.innerHTML=newtotal==1 ? "我觉得很赞" : "我和" + total +"个人觉得很赞";
+                el.innerHTML="取消赞";
+            }
+            else{
+                //反之total值-1
+                newtotal=total-1;
+                praise.innerHTML=newtotal==0 ? "" : newtotal +"个人觉得很赞";
+                el.innerHTML="赞";
+            }
+            //更新total值
+            praise.setAttribute("total",newtotal);
+            //如果没有人点赞容器隐藏
+            praise.style.display=(newtotal==0) ? "none" : "block";
+        }
+        //回复评论
+        function reply(box){
+            //获取评论框
+            var textarea=box.getElementsByTagName("textarea")[0];
+            //获取包含所有评论的容器
+            var comment=box.getElementsByClassName("comment-list")[0];
+            //创建新的评论div
+            var div=document.createElement("div");
+            //赋类名
+            div.className="comment";
+            //设置属性
+            div.setAttribute("user","self");
+            //获取每条评论的innerHTML结构，每次只替换textarea的输入内容和 当前发送时间
+            var html='<div class="comment-left">'+'<img src="../images/18.jpg" alt=""/>'+'</div>'+
+                    '<div class="comment-right">'+
+                    '<div class="comment-text"><span>我：</span>'+textarea.value+'</div>'+
+                    '<div class="comment-date">'+
+                    getTime()+
+                    '<a class="comment-zan" href="javascript:;" total="0" my="0">赞</a>'+
+                    '<a class="comment-dele" href="javascript:;">删除</a>'+
+                    '</div>'+
+                    '</div>';
+            //插入到新建的评论div
+            div.innerHTML=html;
+            //把新评论插入到评论列表
+            comment.appendChild(div);
+            //评论后初始化textarea输入框
+            textarea.value="评论…";
+            textarea.parentNode.className="hf";
+        }
+        //获取当前时间回复评论时调用
+        function getTime(){
+            var t=new Date();
+            var y=t.getFullYear();
+            var m=t.getMonth()+1;
+            var d=t.getDate();
+            var h=t.getHours();
+            var mi=t.getMinutes();
+            m=m<10?"0"+m:m;
+            d=d<10?"0"+d:d;
+            h=h<10?"0"+h:h;
+            mi=mi<10?"0"+mi:mi;
+            return y+"-"+m+"-"+d+""+h+":"+mi;
+        }
+        //回复里点赞
+        function praiseReply(el){
+            //获取当前total值 也就是所有点赞数量
+            var total=parseInt(el.getAttribute("total"));
+            //获取当前my值 我的点赞
+            var my=parseInt(el.getAttribute("my"));
+            //创建新的total
+            var newtotal;
+            //判断my=0就是我准备要点赞
+            if(my==0){
+                //我点了赞总数量就要+1
+                newtotal=total+1;
+                //更新total值
+                el.setAttribute("total",newtotal);
+                //更新my值
+                el.setAttribute("my",1);
+                //更新文字 就是我点了后 文字就是取消赞了
+                el.innerHTML=newtotal+" 取消赞";
+            }else{
+                //反之-1
+                newtotal=total-1;
+                el.setAttribute("total",newtotal);
+                el.setAttribute("my",0);
+                el.innerHTML=(newtotal==0)?" 赞":newtotal+" 赞";
+            }
+        }
+        //操作回复
+        function operateReply(el){
+            //每条评论
+            var comment=el.parentNode.parentNode.parentNode;
+            //整个状态
+            var box=comment.parentNode.parentNode.parentNode;
+            //评论框
+            var textarea=box.getElementsByTagName("textarea")[0];
+            //名字
+            var user=comment.getElementsByClassName("user")[0];
+            //点击的innerHTML
+            var txt=el.innerHTML;
+            //判断当前点击的是否为回复
+            if(txt=="回复"){
+                //评论框触发焦点事件 也就是变高
+                textarea.onfocus();
+                //内容变为回复+当前人的名字
+                textarea.value="回复 "+user.innerHTML;
+                //调用键盘事件
+                textarea.onkeyup();
+            }else{
+                //否则就是删除节点
+                remove(comment);
+            }
+        }
+        //遍历所有状态消息
+        for(var i=0;i<lists.length;i++){
+            //全部事件代理
+            lists[i].onclick=function(e){
+                //获取当前点击事件
+                var e=e||window.event;
+                var el=e.srcElement;
+                if(!el){
+                    el=e.target;//兼容火狐
+                }
+                //判断点击的类名
+                switch(el.className){
+                        //关闭整个状态
+                    case "close":
+                        remove(el.parentNode);
+                        break;
+                        //上面的点赞
+                    case "dzan":
+                        praisebox(el.parentNode.parentNode.parentNode,el);
+                        break;
+                        //回复评论
+                    case "hf-btn hf-btn-on":
+                        reply(el.parentNode.parentNode.parentNode);
+                        break;
+                        //每条评论中点赞
+                    case "comment-zan":
+                        praiseReply(el);
+                        break;
+                    case "comment-dele":
+                        operateReply(el);
+                        break;
+                }
+            }
+            var textarea=lists[i].getElementsByClassName("hf-text")[0];
+            //焦点事件
+            textarea.onfocus=function(){
+                this.parentNode.className='hf hf-on';
+                this.value = this.value == '评论…' ? '' : this.value;
+            }
+            //失焦事件
+            textarea.onblur=function(){
+                if(this.value==''){
+                    this.parentNode.className='hf';
+                    this.value ='评论…';
+                }
+            }
+            //键盘事件
+            textarea.onkeyup=function(){
+                var len=this.value.length;
+                var textParentNode=this.parentNode;
+                var textBtn=textParentNode.children[1];
+                var textNub=textParentNode.children[2];
+                if(len==0 /*|| len>100*/){
+                    textBtn.className="hf-btn";
+                }else{
+                    textBtn.className="hf-btn hf-btn-on";
+                    /*this.style.color="#333"; */
+                }
+                textNub.innerHTML=len+"/100";
+            }
+        }
+        //遍历结束
+    }
+</script>
+<script type="text/javascript">
+        var v=false;
+        $(".btn").click( function() {
+            if(v) {    
+                $(this).html("关注");
+                v=false; 
+            }
+            else{
+                $(this).html("取消关注");
+                v=true;
+            }
+});
+</script>
+</html>
